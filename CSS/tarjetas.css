@@ -177,6 +177,9 @@ header nav ul li {
     font-weight: bold;
 }
 
+.detalles {
+    position: relative;
+}
 .detalles a {
     color: #666666;
 }
