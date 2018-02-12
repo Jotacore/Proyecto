@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    color: rgb(99, 114, 129);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    padding: 20px;
+}
+
+.normal {
+    box-shadow: 0 4px 8px grey;
+    position: initial;
+}
+
+.normal:hover {
+    color: #DF4215}
+
+.fila {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ultima {
+    margin-bottom: 40px;
+}
+
+.col1 {
+    padding: 10px;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.col2 {
+    padding: 10px;
+    flex-basis: 300px;
+    flex-grow: 2;
+}
+
+.col3 {
+    padding: 10px;
+    flex-basis: 300px;
+    flex-grow: 3;
+}
+
+.col100 {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .burger {
+    display: none;
+    color: rgb(83, 18, 0);
+    font-size: 40px;
+    background-color: rgba(223, 65, 21, 0.116);
+    border-radius: 5px;
+    padding: 1px 11px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+.normal nav ul li a {
+    color: rgb(175, 54, 21);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0);  
+}
+
+.normal nav ul li a:hover {
+    color: rgb(175, 54, 21);
+}
+
+.normal nav ul li a.activo {
+    color: #3f3f3f;
+}
+
+.contenedor {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    grid-template-rows: repeat(3, 400px);
+    grid-gap: 50px;
+    justify-content: space-around;
+}
+
+.tarjeta {
+    font-size: 15px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 2px 2px 4px rgba(153, 5, 5, 0.678);
+    background-color: rgb(255, 237, 227);
+}
+
+.imagen {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.imagen img {
+    height: 200px;
+}
+
+.btn {
+    background-color: rgb(220, 20, 20);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    border-bottom: 4px solid rgb(163, 16, 16);
+    text-align: center;
+    align-self: center;
+}
+
+.btn:hover {
+    background-color: rgb(163, 16, 16);
+}
+
+.datos {
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.topcard {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.direccion {
+    width: 200px;
+}
+
+.direccion p:first-child {
+    color: rgb(220, 20, 20);
+    font-weight: bold;
+}
+
+.detalles a {
+    color: #666666;
+}
+
+.detalles a:hover {
+    color: rgb(220, 20, 20);
+}
+
+/* Footer */
+footer {
+    background-color:silver;
+    background-image: 
+    radial-gradient(circle at 100% 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, white 10%, silver 11%, silver 23%, white 24%, white 30%, silver 31%, silver 43%, white 44%, white 50%, silver 51%, silver 63%, white 64%, white 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent),
+    radial-gradient(circle at 0    50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent);
+    background-size:100px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    position: relative;
+}
+
+.top {
+    font-size: 40px;
+    position: absolute;
+    top: -60px;
+    left: 92%;
+    transform: translateX(10%);
+    height: 60px;
+    width: 60px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px;
+}
+
+.izda {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+}
+
+.izda p {
+    padding: 5px;
+}
+.centro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 22px;
+}
+
+footer a {
+    text-decoration:none;
+    color: rgb(146, 40, 11);
+}
+
+.dcha {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.dcha a {
+    font-size: 50px;
+    color: rgb(141, 39, 10);
+    margin: 10px;
+}
+
+.dcha a:hover {
+    color: rgb(83, 18, 0);
+}
+
+.legales a {
+    font-size: 20px;
+}
+
+.minifooter p {
+    font-size:20px;
+    font-weight: bold;
+    padding: 5px; 
+}
+
+@media (max-width: 920px) { 
+    .izda, .centro, .dcha {
+        flex-basis: 100%;
+    }
+    .col1 {
+        flex-basis: initial;
+    }
+}    
+@media (max-width: 740px) {
+    nav {
+        display: none;
+    }
+    
+    header .burger {
+        display: initial;
+    }
+
+    .col1 {
+        flex-basis: initial;
+    }
+}
