@@ -179,6 +179,25 @@ header nav ul li a {
    flex-grow: 3;
 }
 
+.col33 {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.col50 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.col66 {
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
 .col100 {
    padding: 10px;
    width: 100%;
@@ -370,6 +389,83 @@ ul {
 li {
     padding: 10px;
     line-height: 1.4em;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/window_1920.jpg");
+}
+
+form {
+    margin: 20px 0 -20px;
+    width: 70%;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 239, 232);
+    z-index: 1;
+    border-radius: 12px;
+    border: 1px solid rgb(172, 83, 0);
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(136, 29, 0);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.294);
+}
+
+.filaform {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+label {
+    font-size: 20px;
+    opacity: 100%;
+    color: #923600;
+}
+
+input {
+    font-size: 20px;
+    padding: 5px;
+    border: solid 1px #923600;
+    border-radius: 20px;
+    color: rgb(99, 114, 129);
+}
+
+input:focus {
+    background-color: #ffd9b4;
+    color: rgb(99, 114, 129);
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+    color: rgb(99, 114, 129);
+}
+
+#nombre::-webkit-input-placeholder {
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+#apellidos::-webkit-input-placeholder {
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+#mail::-webkit-input-placeholder {
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+#telefono::-webkit-input-placeholder {
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+.boton_form {
+
 }
 
 /* Media Queries */

@@ -175,6 +175,7 @@ header nav ul li {
 .direccion p:first-child {
     color: rgb(220, 20, 20);
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .detalles {
