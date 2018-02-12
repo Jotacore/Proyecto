@@ -178,8 +178,10 @@ header nav ul li {
 }
 
 .detalles {
-    position: relative;
+    display: flex;
+    flex-direction: row;
 }
+
 .detalles a {
     color: #666666;
 }
