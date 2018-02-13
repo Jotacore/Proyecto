@@ -21,6 +21,14 @@ a:hover {
     text-shadow: 2px 2px 3px rgb(255, 255, 255);
 }
 
+a.activo {
+    color: #DF4215;
+    text-shadow: 2px 2px 1px rgb(255, 255, 255);
+    background-color: rgba(255, 192, 149, 0.746);
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
 header {
     position: absolute;
     top: 0;
@@ -129,8 +137,8 @@ header nav ul li {
     font-size: 15px;
     width: 300px;
     height: 400px;
-    box-shadow: 2px 2px 4px rgba(153, 5, 5, 0.678);
-    background-color: rgb(255, 237, 227);
+    box-shadow: 2px 2px 4px rgba(153, 5, 5, 0.678), -2px 0px 4px rgba(0, 0, 0, 0.233);
+    background-color: rgb(255, 245, 240);
 }
 
 .imagen {
@@ -144,11 +152,13 @@ header nav ul li {
     height: 200px;
 }
 
-.btn {
+ .btn {
     font-size: 20px;
+    font-weight: normal;
     background-color: rgb(220, 20, 20);
     color: white;
-    padding: 7px;
+    padding: 5px;
+    margin-top: 5px;
     border-radius: 5px;
     text-decoration: none;
     border-bottom: 4px solid rgb(163, 16, 16);
@@ -156,7 +166,10 @@ header nav ul li {
     align-self: center;
 }
 
-.btn:hover {
+ .btn:hover {
+    font-weight: normal;
+    color: white;
+    text-shadow: none;
     background-color: rgb(163, 16, 16);
     cursor: pointer;
 }
@@ -187,9 +200,14 @@ header nav ul li {
     margin-bottom: 5px;
 }
 
+.descripcion {
+    text-align: center;
+}
+
 .detalles {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .detalles a {
@@ -236,7 +254,7 @@ button {
     border: 1px solid rgb(168, 62, 0);
 }
 
-.pagina {
+a .pagina {
     margin-top: 10px;
     background-color: white;
     color: rgb(199, 73, 0);
@@ -244,7 +262,7 @@ button {
     font-size: 22px;
 }
 
-.pagina:hover {
+a .pagina:hover {
     background-color: rgb(199, 73, 0);
     color: rgb(255, 255, 255);
     border: 1px solid rgb(168, 62, 0);
