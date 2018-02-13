@@ -167,10 +167,22 @@ header nav ul li a {
     flex-grow: 1;
 }
 
+.col1contacto {
+    padding: 50px 10px;
+    flex-basis: 100px;
+    flex-grow: 1; 
+}
+
 .col2 {
    padding: 10px;
    flex-basis: 300px;
    flex-grow: 2;
+}
+
+.col2contacto {
+    padding: 10px;
+    flex-basis: 200px;
+    flex-grow: 2; 
 }
 
 .col3 {
@@ -370,10 +382,20 @@ footer a {
 
 .direccion {
     line-height: 1.8em;
-    border: 1px solid rgba(42, 122, 66, 0.198);
+    padding: 1px 30px;
+    font-size: 20px;
+    color: rgb(99, 114, 129);
+    border: 1px solid rgb(172, 83, 0);
     text-align: center;
-    background-color: rgba(13, 117, 44, 0.089);
+    background-color: rgb(255, 239, 232);
     border-radius: 12px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.mapa {
+    box-shadow: -4px 4px 16px rgba(0, 0, 0, 0.5);  
 }
 
 h1 {
@@ -396,27 +418,29 @@ li {
     flex-direction: column;
     align-items: center;
     background-image: url("../img/window_1920.jpg");
+    padding: 50px;
 }
 
 form {
-    margin: 20px 0 -20px;
+    margin: 10px 0 -10px;
+    padding: 20px;
     width: 70%;
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);
     background-color: rgb(255, 239, 232);
-    z-index: 1;
     border-radius: 12px;
     border: 1px solid rgb(172, 83, 0);
 }
 
 h3 {
     font-size: 30px;
+    margin-bottom: 15px;
     text-align: center;
     color: rgb(136, 29, 0);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.294);
 }
 
 .filaform {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: flex;
 }
 
@@ -427,7 +451,7 @@ label {
 }
 
 input {
-    font-size: 20px;
+    font-size: 15px;
     padding: 5px;
     border: solid 1px #923600;
     border-radius: 20px;
@@ -465,8 +489,17 @@ input::-webkit-input-placeholder {
 }
 
 .boton_form {
-
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background: -webkit-linear-gradient(top, #DF4215, rgb(179, 48, 12))
 }
+
+.boton_form:hover {
+    background: -webkit-linear-gradient(top, rgb(197, 57, 19), rgb(151, 41, 10));
+    cursor: pointer;
+} 
 
 /* Media Queries */
 

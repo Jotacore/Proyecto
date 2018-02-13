@@ -10,6 +10,17 @@ body {
     color: rgb(99, 114, 129);
 }
 
+a {
+    text-decoration: none;
+    font-weight: bold; 
+    color: rgb(83, 18, 0);
+}
+
+a:hover {
+    color: rgb(175, 54, 21);
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+}
+
 header {
     position: absolute;
     top: 0;
@@ -21,6 +32,11 @@ header {
     padding: 20px;
 }
 
+.precio {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .normal {
     box-shadow: 0 4px 8px grey;
     position: initial;
@@ -28,16 +44,6 @@ header {
 
 .normal:hover {
     color: #DF4215}
-
-.fila {
-    padding: 40px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.ultima {
-    margin-bottom: 40px;
-}
 
 .col1 {
     padding: 10px;
@@ -111,10 +117,10 @@ header nav ul li {
 }
 
 .contenedor {
-    margin: 40px;
+    margin: 70px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 400px);
-    grid-template-rows: repeat(3, 400px);
+    grid-template-rows: repeat(2, 400px);
     grid-gap: 50px;
     justify-content: space-around;
 }
@@ -139,9 +145,10 @@ header nav ul li {
 }
 
 .btn {
+    font-size: 20px;
     background-color: rgb(220, 20, 20);
     color: white;
-    padding: 10px;
+    padding: 7px;
     border-radius: 5px;
     text-decoration: none;
     border-bottom: 4px solid rgb(163, 16, 16);
@@ -151,6 +158,7 @@ header nav ul li {
 
 .btn:hover {
     background-color: rgb(163, 16, 16);
+    cursor: pointer;
 }
 
 .datos {
@@ -173,6 +181,7 @@ header nav ul li {
 }
 
 .direccion p:first-child {
+    font-size: 18px;
     color: rgb(220, 20, 20);
     font-weight: bold;
     margin-bottom: 5px;
@@ -189,6 +198,63 @@ header nav ul li {
 
 .detalles a:hover {
     color: rgb(220, 20, 20);
+}
+
+.siguiente {
+    float: right;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 100px;
+    border-radius: 5px;
+    border-left: 2px solid rgb(141, 52, 0);
+    border-bottom: 4px solid rgb(141, 52, 0);
+}
+
+.anterior {
+    float: left;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 100px;
+    border-radius: 5px;
+    border-right: 2px solid rgb(141, 52, 0);
+    border-bottom: 4px solid rgb(141, 52, 0);
+}
+
+.anterior:hover {
+    background-color: rgb(141, 52, 0);
+}
+
+.siguiente:hover {
+    background-color: rgb(141, 52, 0);
+}
+
+button {
+    background-color: rgb(175,54,21);
+    color: white;
+    font-size: 15px;
+    padding: 2px;
+    border: 1px solid rgb(168, 62, 0);
+}
+
+.pagina {
+    margin-top: 10px;
+    background-color: white;
+    color: rgb(199, 73, 0);
+    border: 1px solid rgb(168, 62, 0);
+    font-size: 22px;
+}
+
+.pagina:hover {
+    background-color: rgb(199, 73, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(168, 62, 0);
+    font-size: 22px;
+}
+
+.paginacion {
+    text-align: center;
+    margin-bottom: 30px;
+    align-items: center;
 }
 
 /* Footer */
