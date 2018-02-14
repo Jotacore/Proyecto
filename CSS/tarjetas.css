@@ -300,6 +300,21 @@ a .pagina:hover {
     justify-content: space-around;
 }
 
+.pagina1, .pagina3 {
+    margin-top: 10px;
+    background-color: white;
+    color: rgb(199, 73, 0);
+    border: 1px solid rgb(168, 62, 0);
+    font-size: 22px;
+}
+
+/* .pagina1:hover, .pagina3:hover {
+    background-color: rgb(199, 73, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(168, 62, 0);
+    font-size: 22px;
+} */
+
 /* Footer */
 footer {
     background-color:silver;
