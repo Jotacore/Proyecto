@@ -82,6 +82,8 @@ p {
 .normal:hover {
     color: #DF4215}
 
+/* Menú hamburguesa */
+
 header .burger {
     display: none;
     color: rgb(83, 18, 0);
@@ -89,7 +91,192 @@ header .burger {
     background-color: rgba(223, 65, 21, 0.116);
     border-radius: 5px;
     padding: 1px 11px;
+    visibility: visible;
+    opacity: 1;
+    transition: ease-in 1000ms; 
 }
+
+.burger.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 100ms ease; 
+}
+
+.cerrar {
+    color: rgb(112, 24, 0);
+    text-shadow: 1px 0px 5px #ffffff;
+    font-size: 36px;
+    padding: 20px;
+}
+
+.normal .burger {
+   color: rgb(204, 226, 255);
+}
+
+.menu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60%;
+    height: 50vh;
+    background-color: rgba(223, 65, 21, 0.24);
+    display: none;
+    z-index: 10;
+    padding: 0px 20px;
+    border-radius: 0px 0px 20px 0px;
+}
+
+.menu div {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menu div a {
+    color: rgb(112, 24, 0);
+    text-shadow: 1px 0px 5px #ffffff;
+    font-size: 25px;
+    padding: 10px;
+    width: 100%;
+    white-space: pre;
+}
+
+.menu div a.activo {
+    background-color: rgba(255, 255, 255, 0.493);
+    border-radius: 12px;
+}
+
+.menu div a:hover {
+    background-color: rgba(255, 255, 255, 0.397);
+    border-radius: 12px;
+}
+
+/* Menú hamburguesa 2 */
+
+.barra {
+    height: 5px;
+    width: 35px;
+    margin: 8px;
+    margin-left: 10px;
+    background-color: rgb(175, 54, 21);
+    border-radius: 2px;
+}
+
+.cerrar {
+    color: rgb(83, 18, 0);
+    text-shadow: 1px 0px 5px #ffffff;
+    font-size: 36px;
+    padding: 20px;
+}
+
+.arriba, .media, .abajo {
+    Transition: 700ms ease;
+}
+
+.burger2.abierto .arriba {
+    transform:translateY(13px) rotateZ(45deg);
+}
+
+.burger2.abierto .media {
+width: 0;
+}
+
+.burger2.abierto .abajo {
+    transform:translateY(-13px) rotateZ(-45deg);
+}
+
+.menu2 {
+    position: absolute;
+    top: 105px;
+    left: 10px;
+    width: 45%;
+    height: calc(80vh - 80px);
+    background-color:rgb(255, 233, 223);
+    z-index: 10;
+    display: none;
+    box-shadow: 2px 0px 4px grey;
+    padding: 15px;
+}
+
+.pmenu {
+    color: rgb(175, 54, 21);
+    margin-bottom: 160px;
+}
+
+.pmenu:hover {
+    color: #DF4215;
+    text-shadow: 2px 2px #d8d8d8;
+}
+
+.menu2 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu2 div a {
+    color:rgb(175, 54, 21);
+    text-shadow: 2px 2px 1px color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10px;
+    transform: translateX(-200px);
+    white-space: pre;
+}
+
+.menu2 div a.activo {
+    color:#DF4215;
+} 
+
+.menu2 div a:hover {
+    background-color:rgba(253, 174, 121, 0.746);
+    border-radius: 5px;
+}
+
+.menu2 div a:nth-child(1) {
+    transition: transform 500ms ease-in-out;
+}
+.menu2 div a:nth-child(2) {
+    transition: transform 700ms ease-in-out;
+}
+.menu2 div a:nth-child(3) {
+    transition: transform 900ms ease-in-out;
+}
+.menu2 div a:nth-child(4) {
+    transition: transform 1100ms ease-in-out;
+}
+
+.menu2 div a.aparicion {
+    transform: translateX(0px);
+}
+
+.menu2 .todo {
+    display: flex;
+}
+
+.todo {
+    height:calc(100vh - 105px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu2 a {
+    width: 100%;
+    padding: 10px 0 10px 20px;
+}
+
+.burger2 {
+    display: none;
+}
+
+/* Sección nav */
 
 header nav ul {
     list-style: none;
@@ -398,6 +585,7 @@ footer {
     justify-content: center; 
     align-items: center; 
     padding: 10px;
+    /* margin-top: -5px; */
 }
 
 .izda {
@@ -451,6 +639,86 @@ footer a {
     padding: 5px; 
 }
 
+/* Mapa modal detalles */
+
+.btnmodal {
+    font-size: 20px;
+    font-weight: normal;
+    background: -webkit-linear-gradient(top,rgb(220, 20, 20), rgb(163, 16, 16));
+    color: white;
+    text-shadow: 1px 1px 5px #3f3f3f;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
+    outline: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    opacity: 0;
+    transition: all 500ms ease; 
+}
+
+.overlay.visible { 
+    z-index: 20; 
+    opacity: 1;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 900px;
+    padding: 10px;
+    flex-basis: 300px;
+    flex-grow: 2;
+    text-align: justify;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 4px 4px 4px hsla(0, 0%, 0%, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 21;
+    transition: all 500ms ease;
+}
+
+p.map {
+    text-align: center;
+}
+
+.filamap {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal button {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal p:first-child {
+    font-size: 36px;
+    color: #0D71B9;
+}
+
 /* Contacto */
 
 .direccion {
@@ -468,7 +736,7 @@ footer a {
 }
 
 .mapa {
-    box-shadow: -4px 4px 16px rgba(0, 0, 0, 0.5);  
+    /* box-shadow: -4px 4px 16px rgba(0, 0, 0, 0.5);   */
 }
 
 h1 {
@@ -559,22 +827,22 @@ input::-webkit-input-placeholder {
 
 #nombre::-webkit-input-placeholder {
     background-repeat: no-repeat;
-    padding-left: 30px;
+    padding-left: 10px;
 }
 
 #apellidos::-webkit-input-placeholder {
     background-repeat: no-repeat;
-    padding-left: 30px;
+    padding-left: 10px;
 }
 
 #mail::-webkit-input-placeholder {
     background-repeat: no-repeat;
-    padding-left: 30px;
+    padding-left: 10px;
 }
 
 #telefono::-webkit-input-placeholder {
     background-repeat: no-repeat;
-    padding-left: 30px;
+    padding-left: 10px;
 }
 
 .boton_form {
@@ -582,7 +850,8 @@ input::-webkit-input-placeholder {
     padding: 10px;
     border-radius: 10px;
     color: white;
-    background: -webkit-linear-gradient(top, #DF4215, rgb(179, 48, 12))
+    background: -webkit-linear-gradient(top, #DF4215, rgb(179, 48, 12));
+    outline: none;
 }
 
 .boton_form:hover {
@@ -664,6 +933,10 @@ tr, th, td {
     }
     
     header .burger {
+        display: initial;
+    }
+
+    header .burger2 {
         display: initial;
     }
 

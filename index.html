@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./CSS/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500i,700" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="./js/librerias/jquery-3.3.1.min.js"></script>
+    <script src="./js/main.js"></script> 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -16,9 +18,20 @@
     <meta name="msapplication-TileColor" content="#ffa800">
     <meta name="theme-color" content="#ffa800">
 </head>
-<body>
+<body id="top">
     <header>
-        <p class="burger"><i class="fas fa-bars"></i></p>
+        <p class="burger open"><i class="fas fa-bars"></i></p>
+        <div class="menu">
+            <p class="cerrar close">
+                <i class="far fa-window-close"></i>
+            </p>
+            <div>
+                <a href="index.html" class="activo">Inicio</a>
+                <a href="compra.html">Compra</a>
+                <a href="alquiler.html">Alquiler</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div> 
         <a href="index.html"><img src="./img/icon1.svg" alt="Logo">
         </a>
         <nav>
@@ -37,7 +50,10 @@
             <i class="far fa-caret-square-down"></i>
         </a>
     </div>
-    <div class="fila" id="primera">
+    <div class="fila">
+        <span id="primera"
+        style="display: block;
+                padding-bottom: 100px;">&nbsp;</span>
         <div class="col1first">
             <p>Engel & Völkers es una de las compañías de servicios líderes en el mundo especializada en la intermediación de inmuebles residenciales y comerciales, así como de yates y aviones. Presente en más de 800 localizaciones en el mundo, Engel & Völkers ofrece tanto a clientes particulares como institucionales una gran variedad de servicios profesionales a su medida. Asesoría, venta y alquiler conforman las competencias claves de los más de 10.000 empleados. Actualmente la compañía está operando en más de 30 países en cuatro continentes.</p>
         </div>    
@@ -81,7 +97,8 @@
          autoplay 
          loop 
          width="1960px"
-         poster="./img/Heaven-From-Top.jpg"></video> /*poster: el vídeo se ve como una imagen*/
+         poster="./img/Heaven-From-Top.jpg"></video> 
+         <!-- /*poster: el vídeo se ve como una imagen*/ -->
     </div>
     <div class="fila ultima">
             <div class="col100">
@@ -96,7 +113,7 @@
             </div>
     </div>
     <footer>
-        <a href="#" class="top">
+        <a href="#top" class="top">
             <i class="far fa-caret-square-up"></i>
         </a>
         <div class="col1 izda">

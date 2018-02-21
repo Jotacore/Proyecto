@@ -134,6 +134,131 @@ header.normal {
     font-weight: bolder;
 }
 
+/* Menú hamburguesa 2 */
+
+.barra {
+    height: 5px;
+    width: 35px;
+    margin: 8px;
+    margin-left: 10px;
+    background-color: rgb(175, 54, 21);
+    border-radius: 2px;
+}
+
+.cerrar {
+    color: rgb(83, 18, 0);
+    text-shadow: 1px 0px 5px #ffffff;
+    font-size: 36px;
+    padding: 20px;
+}
+
+.arriba, .media, .abajo {
+    Transition: 700ms ease;
+}
+
+.burger2.abierto .arriba {
+    transform:translateY(13px) rotateZ(45deg);
+}
+
+.burger2.abierto .media {
+width: 0;
+}
+
+.burger2.abierto .abajo {
+    transform:translateY(-13px) rotateZ(-45deg);
+}
+
+.menu2 {
+    position: absolute;
+    top: 105px;
+    left: 10px;
+    width: 45%;
+    height: calc(80vh - 80px);
+    background-color:rgb(255, 233, 223);
+    z-index: 10;
+    display: none;
+    box-shadow: 2px 0px 4px grey;
+    padding: 15px;
+}
+
+.pmenu {
+    color: rgb(175, 54, 21);
+    margin-bottom: 160px;
+}
+
+.pmenu:hover {
+    color: #DF4215;
+    text-shadow: 2px 2px #d8d8d8;
+}
+
+.menu2 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu2 div a {
+    color:rgb(175, 54, 21);
+    text-shadow: 2px 2px 1px color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10px;
+    transform: translateX(-200px);
+}
+
+.menu2 div a.activo {
+    color:#DF4215;
+} 
+
+.menu2 div a:hover {
+    background-color:rgba(253, 174, 121, 0.746);
+    border-radius: 5px;
+}
+
+.menu2 div a:nth-child(1) {
+    transition: transform 500ms ease-in-out;
+}
+.menu2 div a:nth-child(2) {
+    transition: transform 700ms ease-in-out;
+}
+.menu2 div a:nth-child(3) {
+    transition: transform 900ms ease-in-out;
+}
+.menu2 div a:nth-child(4) {
+    transition: transform 1100ms ease-in-out;
+}
+
+.menu2 div a.aparicion {
+    transform: translateX(0px);
+}
+
+.menu2 .todo {
+    display: flex;
+}
+
+.todo {
+    height:calc(100vh - 105px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu2 a {
+    width: 100%;
+    padding: 10px 0 10px 20px;
+}
+
+.burger2 {
+    display: none;
+}
+
+/* Tarjetas */
+
 .contenedor {
     margin: 70px;
     display: grid;
@@ -416,6 +541,10 @@ footer a {
     }
     
     header .burger {
+        display: initial;
+    }
+
+    header .burger2 {
         display: initial;
     }
 

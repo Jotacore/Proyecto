@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./CSS/tarjetas.css">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500i,700" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="./js/librerias/jquery-3.3.1.min.js"></script>
+    <script src="./js/main.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -18,13 +20,28 @@
 </head>
 <body>
     <header class="normal">
-        <p class="burger"><i class="fas fa-bars"></i></p>
+        <div class="burger2">
+            <div class="barra arriba"></div>
+            <div class="barra media"></div>
+            <div class="barra abajo"></div>
+        </div>
+        <div class="menu2">
+            <div class="todo">
+                <div class="enlaces">
+                    <a href="index.html">Inicio</a>
+                    <a href="compra.html"class="activo">Compra</a>
+                    <a href="alquiler.html">Alquiler</a>
+                    <a href="contacto.html">Contacto</a> 
+                </div>
+                    <p class="pmenu">Síguenos en: &nbsp<i class="fab fa-facebook"></i>&nbsp<i class="fab fa-twitter-square"></i>&nbsp<i class="fab fa-instagram"></i></p>
+            </div>
+        </div>
         <a href="index.html"><img src="./img/icon1.svg" alt="Logo">
         </a>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="compra.html" class="activo">Compra</a></li>
+                <li><a href="compra.html"class="activo">Compra</a></li>
                 <li><a href="alquiler.html">Alquiler</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>

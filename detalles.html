@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./CSS/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500i,700" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="./js/librerias/jquery-3.3.1.min.js"></script>
+    <script src="./js/main.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -16,9 +18,24 @@
     <meta name="msapplication-TileColor" content="#ffa800">
     <meta name="theme-color" content="#ffa800">
 </head>
-<body>
+<body id="top">
     <header class="normal">
-        <p class="burger"><i class="fas fa-bars"></i></p>
+        <div class="burger2">
+            <div class="barra arriba"></div>
+            <div class="barra media"></div>
+            <div class="barra abajo"></div>
+        </div>
+        <div class="menu2">
+            <div class="todo">
+                <div class="enlaces">
+                    <a href="index.html">Inicio</a>
+                    <a href="compra.html">Compra</a>
+                    <a href="alquiler.html">Alquiler</a>
+                    <a href="contacto.html">Contacto</a> 
+                </div>
+                    <p class="pmenu">Síguenos en: &nbsp<i class="fab fa-facebook"></i>&nbsp<i class="fab fa-twitter-square"></i>&nbsp<i class="fab fa-instagram"></i></p>
+            </div>
+        </div>
         <a href="index.html"><img src="./img/icon1.svg" alt="Logo">
         </a>
         <nav>
@@ -75,13 +92,20 @@
                 </tr>
             </table>
         </div>
-        <div class="col2mapa">
-            <p class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3206.8284826372605!2d-4.639790684643683!3d36.510002180009394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd731dfb22d889c3%3A0x8aa912b25cc2f901!2sCalle+Co%C3%ADn%2C+21%2C+29649+Las+Lagunas+de+Mijas%2C+M%C3%A1laga!5e0!3m2!1ses!2ses!4v1518630094183" 
-                width="100%" 
-                height="450" 
-                frameborder="0" 
-                style="border:0" 
-                allowfullscreen></iframe></p>
+        <div class="filamap">
+            <div class="overlay"></div>
+            <button class="btnmodal open">Mapa &nbsp;<i class="fas fa-info-circle"></i></button>
+            <div class="modal">
+                <p class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6630.785992540483!2d-4.637602!3d36.510002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd731dfb22d889c3%3A0x8aa912b25cc2f901!2sCalle+Co%C3%ADn%2C+21%2C+29649+Las+Lagunas+de+Mijas%2C+M%C3%A1laga!5e1!3m2!1ses!2ses!4v1519224333618" 
+                    width="100%" 
+                    height="450" 
+                    frameborder="0" 
+                    style="border:0" 
+                    allowfullscreen></iframe></p>
+                <!-- <hr> -->
+                <p class="map">Consulte la localización del inmueble en el mapa.</p>
+                <button class="btnmodal close">Cerrar</button>
+            </div>
         </div>
         <div class="formulario">
             <form>
@@ -120,7 +144,7 @@
             </form>
         </div>
     <footer>
-        <a href="#" class="top">
+        <a href="#top" class="top">
             <i class="far fa-caret-square-up"></i>
         </a>
         <div class="col1 izda">
